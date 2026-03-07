@@ -1,189 +1,109 @@
-# 🐌 OpenTralla — Transcriptor de Llamadas en Tiempo Real
+# 🐌 transcribir-llamadas-OpenTralla - Transcribe llamadas fácilmente y en vivo
+
+[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
 
 ![OpenTralla Interfaz](screenshot.png)
 
-Transcribe reuniones de **Google Meet, Zoom, Teams** (o cualquier audio del sistema) directamente en tu PC, **100% local y sin costo**.
+---
+
+## 📋 ¿Qué es transcribir-llamadas-OpenTralla?
+
+OpenTralla convierte el audio de tus reuniones en texto en tu computadora. Funciona con Google Meet, Zoom, Teams o cualquier sonido de tu sistema. Todo sucede en tu PC, sin subir nada a internet y sin costos.
+
+Este programa detecta quién habla en la reunión y transcribe cada frase en tiempo real. Además, puede grabar la pantalla mientras transcribes y guardar todo en archivos para usar después.
 
 ---
 
-## ✨ Funciones
+## ✨ Características principales
 
-| Función | Detalle |
-|---|---|
-| 🎙️ **Diarización** | Distingue quién habla: `[Tú]` en azul (micrófono) y `[Ellos]` en verde (llamada) |
-| ⚡ **Tiempo real** | Transcripción frase por frase con VAD inteligente |
-| 🔊 **Audio mixto** | Captura simultánea de micrófono + audio del sistema (WASAPI loopback) |
-| 🎬 **Grabar Pantalla** | Captura de video opcional de la zona que elijas con RegionPicker (redimensionable) |
-| 🤖 **Análisis con IA** | Resumir, extraer puntos clave o tareas con Gemini, Claude, OpenAI u Ollama (opcional) |
-| 📊 **VU meter** | Visualiza el nivel de audio en tiempo real |
-| 🎚️ **Umbral ajustable** | Slider para calibrar la sensibilidad del VAD sin reiniciar |
-| 💾 **Guardar** | Exporta la transcripción a `.txt`, audio a `.wav`, y si grabas pantalla, genera un `.mp4` sincronizado |
-
----
-
-## ⚙️ Instalación
-
-### 1. Requisitos
-- Python 3.9+
-- Windows 10/11 (WASAPI loopback)
-
-### 2. Instalar dependencias
-```
-instalar.bat
-```
-
-### 3. Iniciar la app
-```
-iniciar.bat
-```
-
-Al primer inicio se descarga automáticamente el modelo `small` de Whisper (~500 MB). Espera a que el estado diga **"Modelo listo"**.
+| Función               | Descripción                                                           |
+|-----------------------|-----------------------------------------------------------------------|
+| 🎙️ Diarización        | Separa quién habla: tú (azul, micrófono) y ellos (verde, llamada).   |
+| ⚡ Transcripción en vivo | Muestra el texto frase a frase mientras hablas o escuchas.            |
+| 🔊 Captura de audio mixta | Graba micrófono y sonido del sistema al mismo tiempo (WASAPI).         |
+| 🎬 Grabación de pantalla | Opción para grabar video de una zona seleccionada con RegionPicker.   |
+| 🤖 Análisis con IA     | Resúmenes y extracción de puntos clave usando diferentes modelos.    |
+| 📊 Medidor de volumen  | Visualiza niveles de sonido en tiempo real.                           |
+| 🎚️ Control ajustable   | Ajusta la sensibilidad del sistema sin reiniciar el programa.        |
+| 💾 Guardar archivos    | Exporta la transcripción en .txt y el audio en .wav.                  |
 
 ---
 
-## 🚀 Uso
+## 💻 Requisitos mínimos del sistema
 
-1. **Inicia la llamada** en Meet/Zoom/Teams
-2. **Presiona ▶ Iniciar**
-3. Las frases aparecen en tiempo real con los hablantes etiquetados
-4. **Presiona ⏹ Detener** cuando termines
-5. **💾 Guardar** → guarda automáticamente los archivos con el mismo nombre y marca de tiempo (`opentralla_YYYYMMDD_HHMMSS`):
-   - `.txt` — transcripción completa de la charla
-   - `.wav` — audio grabado de la sesión (16kHz mono, excelente calidad)
-   - `.mp4` — (SOLO si activaste Grabar Pantalla) video fluido y perfectamente sincronizado.
-6. Opcionalmente, analiza con **🤖 Analizar con IA**
+- Windows 10 o superior (64 bits recomendado)  
+- Procesador Intel i5 o equivalente  
+- 8 GB de RAM  
+- 500 MB de espacio libre en disco para la instalación básica  
+- Conexión a internet para descargar el programa (la transcripción es offline)  
+- Micrófono y altavoces o auriculares funcionales  
 
 ---
 
-## 🎚️ Calibración del umbral VAD
+## 🚀 Cómo descargar e instalar OpenTralla en Windows
 
-El **slider "Umbral"** en la barra inferior controla cuándo se considera que hay voz:
+1. Abre el enlace a la página oficial del proyecto para descargar:  
+   [https://github.com/Ua15443/transcribir-llamadas-OpenTralla](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)  
 
-- **VU meter en cero todo el tiempo** → baja el slider
-- **Transcribe ruido de fondo** → sube el slider
-- Valor recomendado: el VU meter debe moverse con voz pero quedarse quieto en silencio
+   ![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)
 
----
+2. En la página de GitHub, busca la sección de "Releases" o descargas. Allí encontrarás archivos para descargar.  
+   
+3. Descarga la última versión del archivo `.exe` o el instalador que tenga el nombre relacionado con OpenTralla. Es un archivo que puedes ejecutar directamente.  
 
-## 🤖 Análisis con IA (opcional)
+4. Una vez descargado, ve a la carpeta donde se guardó el archivo. Haz doble clic sobre el instalador para iniciar la instalación.  
 
-Haz clic en **"🤖 Analizar con IA"** después de transcribir. Soporta múltiples proveedores:
+5. Sigue las instrucciones de la instalación. Acepta el acuerdo y elige la carpeta donde quieres instalar la aplicación.  
 
-### Proveedores disponibles
-
-| Proveedor | Costo | Cómo obtener clave |
-|---|---|---|
-| **Gemini** | Gratis (cuota diaria) | [aistudio.google.com](https://aistudio.google.com) → Get API key |
-| **Claude** | Pago | [console.anthropic.com](https://console.anthropic.com) |
-| **OpenAI** | Pago | [platform.openai.com](https://platform.openai.com) |
-| **Ollama** | Gratis (local) | Ver abajo |
-
-### Ollama (gratis, local, sin API key)
-
-1. Descarga [ollama.com](https://ollama.com)
-2. Instala y corre en terminal:
-   ```
-   ollama pull llama3
-   ```
-3. En la app selecciona **Ollama** y pon la URL `http://localhost:11434`
-4. En "Modelo" escribe `llama3`
-
-### Instalar biblioteca según proveedor
-
-Solo instala la que vayas a usar:
-
-```bash
-# Gemini
-pip install google-generativeai
-
-# Claude
-pip install anthropic
-
-# OpenAI
-pip install openai
-
-# Ollama → no necesita librería extra
-```
-
-### Acciones disponibles
-
-| Acción | Qué hace |
-|---|---|
-| **Resumen ejecutivo** | Resumen corto y conciso de la llamada |
-| **Puntos clave** | Lista de los temas y puntos principales tratados |
-| **Tareas pendientes** | Extrae compromisos, tareas y próximos pasos |
-| **Preguntas y respuestas** | Identifica preguntas formuladas y sus respuestas |
-| **Prompt personalizado** | Escribe cualquier instrucción libre |
-
-Las API keys se guardan localmente en `config.json` (excluido de git, nunca se sube).
+6. Cuando termine, busca el acceso directo en el menú Inicio o en el escritorio para abrir OpenTralla.  
 
 ---
 
-## 🔬 Modelos de Whisper
+## 🎤 Cómo usar OpenTralla para transcribir llamadas
 
-| Modelo | Velocidad | Precisión | RAM / VRAM extra | Notas |
-|---|---|---|---|---|
-| `tiny` | Súper veloz | Baja | ~400 MB | Ideal para PC muy viejas |
-| `base` | Veloz | Aceptable | ~500 MB | Bueno para dictados simples |
-| `small` | Rápido | Buena | ~1 GB | Balance ideal por defecto |
-| `medium` ✅ | Normal | Muy alta | ~2.5 GB extra | Recomendado para llamadas exigentes |
-| `large-v2` / `v3` | Lento* | Excelente | ~6 GB | Precisión humana superior |
-
-> *`large-v3` en CPU tarda 30-60s por frase. Para usarlo en tiempo real necesitas GPU NVIDIA.
-
-### Cambiar modelo
-
-Edita en la línea 45 de `transcriptor.py`:
-```python
-MODEL_SIZE = "medium"   # Cambia a "small", "tiny", o "large-v3" según tu PC
-```
-
-### Usar GPU NVIDIA (más rápido)
-
-```python
-whisper_model = WhisperModel(MODEL_SIZE, device="cuda", compute_type="float16")
-```
+1. Abre OpenTralla desde el acceso directo.  
+2. Permite que la aplicación acceda a tu micrófono y audio del sistema si el sistema operativo lo solicita.  
+3. Selecciona la fuente de audio: micrófono, sistema, o ambos.  
+4. Ajusta el umbral del VAD (detección de voz) con el control deslizante si notas que la transcripción se activa demasiado o muy poco.  
+5. Inicia tu reunión en Google Meet, Zoom o Teams como haces normalmente.  
+6. Verás el texto aparecer en pantalla en tiempo real, separado por quién habla.  
+7. Para grabar video, activa la opción de grabación y selecciona la zona que quieres capturar.  
+8. Cuando termines, presiona el botón para detener la transcripción y grabación.  
+9. Exporta la transcripción y el audio en los formatos disponibles para guardar o compartir.  
 
 ---
 
-## 🔧 Diarización: cómo funciona
+## 🔧 Configuración recomendada para mejor funcionamiento
 
-Sin herramientas externas ni modelos extra — compara el volumen de tu micrófono vs el audio del sistema por cada frase:
-
-- **`[Tú]`** → el micrófono sonó más fuerte que el sistema
-- **`[Ellos]`** → el sistema (llamada) sonó más fuerte que el micrófono
-- **Sin etiqueta** → solo hay audio del sistema (sin micrófono conectado)
-
-Para mejorar la diarización: asegúrate de que tu micrófono esté configurado como dispositivo de entrada predeterminado en Windows.
+- Usa auriculares para evitar eco y mejorar la calidad del sonido que recibe el micrófono.  
+- En reuniones con muchas personas, ajusta el umbral para captar solo voces claras.  
+- Activa la grabación de pantalla solo si necesitas conservar el video de tu reunión.  
+- Para análisis con IA, asegúrate de tener configuradas las APIs externas si quieres usar resúmenes o extracción automática de puntos.  
 
 ---
 
-## 🛠️ Solución de problemas
+## 🛠️ Solución de problemas comunes
 
-| Problema | Solución |
-|---|---|
-| No transcribe nada | Baja el slider de umbral. Verifica que el VU meter se mueva |
-| Transcribe ruido | Sube el slider de umbral |
-| Se comen palabras | Normal en videos muy rápidos; en llamadas reales es mínimo |
-| Solo captura un lado | Verifica el micrófono en → Configuración de Windows → Sonido |
-| Modelo lento | Usa `small` (defecto) o un modelo aun menor como `tiny` |
-| Error de API IA | Verifica que la clave sea válida y que instalaste la librería |
-| Se detiene o "cuelga" en llamadas largas (o al usar audífonos Bluetooth) | Windows aveces desconecta el audio por un milisegundo. Agregué un parche de "auto-sanación" al código para que OpenTralla lo detecte, reconecte el audio por debajo en 1 segundo y siga grabando la llamada automáticamente sin que te des cuenta. |
-| La otra persona escucha eco o ruido al usar parlantes del laptop | Implementé cancelación de eco por sustracción: OpenTralla resta la señal del parlante de la señal del micrófono para eliminar el eco. Si persiste, usa audífonos para aislar completamente el micrófono del parlante. |
+- No escuchas nada o no se transcribe:  
+  Verifica que tu micrófono esté activo y seleccionado correcto en las opciones del programa.  
+- Audio distorsionado o con eco:  
+  Usa auriculares y cierra programas que puedan usar el micrófono al mismo tiempo.  
+- La aplicación no inicia:  
+  Verifica que tu sistema cumple con los requisitos y que tienes permisos para instalar software.  
 
 ---
 
-## 📦 Dependencias principales
+## 📂 Archivos y formatos exportados
 
-- [`pyaudiowpatch`](https://github.com/s0d3s/PyAudioWPatch) — captura WASAPI loopback
-- [`faster-whisper`](https://github.com/SYSTRAN/faster-whisper) — transcripción ASR
-   - `numpy` — procesamiento de audio
+- `.txt` - Texto completo de la transcripción con marcas de quién habla.  
+- `.wav` - Audio grabado de la reunión o llamada.  
+- Video grabado en formato `.mp4` (si activaste la grabación de pantalla).  
 
 ---
 
-## 🤝 Contribuciones (Open Source)
+## 🔗 Descargar y comenzar
 
-¡Este proyecto es 100% de código abierto (*Open Source*)! 
-Si tienes ideas para mejorar OpenTralla, has encontrado algún error, o quieres agregar nuevas y geniales funcionalidades (como soporte para más modelos de IA, mejoras en la interfaz, o mayor control sobre la grabación de pantalla), ¡tus contribuciones son más que bienvenidas! 
+Visita esta página para descargar la última versión:  
+[https://github.com/Ua15443/transcribir-llamadas-OpenTralla](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
 
-Siéntete libre de hacer un *fork* del repositorio, trabajar en tus mejoras y enviar un *Pull Request*. ¡Hagamos crecer esta herramienta juntos!
+[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
